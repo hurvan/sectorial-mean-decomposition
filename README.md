@@ -14,11 +14,11 @@ Repo for the method developed in my master thesis
 
 #### Dependencies
 
-- SimpleElastix
-- imgmisc
-- skimage
-- scipy
-- tifffile
+- SimpleElastix (https://simpleelastix.readthedocs.io/)
+- imgmisc (https://pypi.org/project/imgmisc/)
+- skimage (https://scikit-image.org/)
+- scipy (https://www.scipy.org/)
+- tifffile (https://pypi.org/project/tifffile/)
 
 #### How to use
 
@@ -30,12 +30,12 @@ Note: The registration adds 15 voxels of padding to each side of the image.
 
 #### Dependencies
 
-- imgmisc
-- skimage
-- scipy
-- tifffile
-- img2org
-- mahotas
+- imgmisc (https://pypi.org/project/imgmisc/)
+- skimage (https://scikit-image.org/)
+- scipy (https://www.scipy.org/)
+- tifffile (https://pypi.org/project/tifffile/)
+- img2org (https://pypi.org/project/img2org/)
+- mahotas (https://mahotas.readthedocs.io/en/latest/)
 
 #### How to use
 
@@ -50,11 +50,11 @@ If you find strange artifacts in the mapped data it might be due to the datatype
 
 #### Dependencies
 
-- imgmisc
-- skimage
-- tifffile
-- img2org
-- mahotas
+- imgmisc (https://pypi.org/project/imgmisc/)
+- skimage (https://scikit-image.org/)
+- tifffile (https://pypi.org/project/tifffile/)
+- img2org (https://pypi.org/project/img2org/)
+- mahotas (https://mahotas.readthedocs.io/en/latest/)
 #### How to use
 
 In the file you can edit the paths to images and also input their resolution. You also write the paths to where you want the quantified data to be saved.
