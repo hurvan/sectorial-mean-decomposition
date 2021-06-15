@@ -15,8 +15,8 @@ from scipy.spatial.distance import cdist
 from imgmisc import get_resolution, get_layers
 import tifffile
 import tifffile as tiff
-import pyvistaqt as pvq
-import pyvista as pv
+# import pyvistaqt as pvq
+# import pyvista as pv
 import multiprocessing
 import copy
 import pickle

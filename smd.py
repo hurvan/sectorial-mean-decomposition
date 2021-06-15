@@ -33,7 +33,7 @@ if __name__ == "__main__":
     
     ### Number of cores to use and angular intervals to use (in degrees)
     decomposition_cores = 7   # Watch out for RAM usage when using a lot of cores
-    angular_intervals = (45/2, 90/2)
+    angular_intervals = (45/2, 90/2) 
     
     
     

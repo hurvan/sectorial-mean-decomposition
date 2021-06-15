@@ -1,15 +1,15 @@
 import numpy as np
 import SimpleITK as sitk
 import tifffile
-import pyvistaqt as pvq
-import pyvista as pv
+# import pyvistaqt as pvq
+# import pyvista as pv
 from imgmisc import get_resolution
 from skimage import filters
 from scipy import ndimage
 from skimage.measure import regionprops
 import matplotlib.pyplot as plt
 import matplotlib
-import ants
+# import ants
 
 def padding(array, shape):
     xx, yy, zz = shape

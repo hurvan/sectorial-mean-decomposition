@@ -6,8 +6,8 @@ from skimage.morphology import ball
 from skimage.measure import regionprops
 from skimage.transform import rescale
 
-import pyvistaqt as pvq
-import pyvista as pv
+# import pyvistaqt as pvq
+# import pyvista as pv
 
 from imgmisc import listdir, to_uint8, autocrop, cut, get_resolution, mkdir, symlink
 
