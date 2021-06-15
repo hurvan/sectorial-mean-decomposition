@@ -160,6 +160,8 @@ def reorganizeLabels(segImage):
     for i, region in enumerate(regProps):
         currLabel = region.label
         newLabel = i+1
+        if newLabel == currLabel:
+            continue
         labelDict[currLabel] = newLabel
         print(currLabel, newLabel)
         newImage[segImage==currLabel] = newLabel
@@ -251,8 +253,8 @@ def writeToFiles(batchList,path, initName, neighName):
             
 
 
-    init_filepath = to_raw(path+initName+'.init')
-    neigh_filepath = to_raw(path+neighName+'.neigh')
+    init_filepath = to_raw(path+'/'+initName+'.init')
+    neigh_filepath = to_raw(path+'/'+neighName+'.neigh')
 
     with open(init_filepath, 'w') as f1:
         f1.write(init)

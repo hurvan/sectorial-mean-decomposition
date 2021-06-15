@@ -44,12 +44,14 @@ if __name__ == "__main__":
     
     ### Run mapping procedure
     max_cores = multiprocessing.cpu_count()
-    assert decomposition_cores <= max_cores  
+    assert quantification_cores <= max_cores  
+    # segImg_shape = segImg.shape[0] + 30, segImg.shape[1] + 30, segImg.shape[2] + 30
+    # segImg = padding(segImg, segImg_shape)
     assert segImg.shape == pinImg.shape # Images need to have the same shape, 
                                         # 15voxel padding is added to all sides 
                                         # from the registration. Using the padding function
                                         # in multiThreadQuantify.py can help solve this by 
-                                        # setting the final shape to shape+30
+                                        # setting the final shape to shape+30 as seen above
 
 
     

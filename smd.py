@@ -22,17 +22,17 @@ if __name__ == "__main__":
     path_to_registered_seg_source = ""
     path_to_registered_data_source = ""
     resolution_for_registered_source = (1,1,1)
-    
+
     ### Fill in where the target data is
     path_to_seg_target = ""
     resolution_for_target = (1,1,1)
-    
+
     ### Paths to save data
     path_to_mapped_data = ""
     path_to_mapped_seg = ""   # might be redudant
     
     ### Number of cores to use and angular intervals to use (in degrees)
-    decomposition_cores = 24   # Watch out for RAM usage when using a lot of cores
+    decomposition_cores = 7   # Watch out for RAM usage when using a lot of cores
     angular_intervals = (45/2, 90/2)
     
     
@@ -50,12 +50,14 @@ if __name__ == "__main__":
     
     ### Run mapping procedure
     max_cores = multiprocessing.cpu_count()
-    assert decomposition_cores <= max_cores  
+    assert decomposition_cores <= max_cores     
+    # target_shape = seg_target.shape[0] + 30, seg_target.shape[1] + 30, seg_target.shape[2] + 30
+    # seg_target = padding(seg_target, target_shape)
     assert seg_source.shape == seg_target.shape # Images need to have the same shape, 
                                                 # 15voxel padding is added to all sides 
                                                 # from the registration. Using the padding function
                                                 # in decomposeCells.py can help solve this by 
-                                                # setting the final shape to shape+30
+                                                # setting the final shape to shape+30 as seen above
             
     overlapDict = calculateOverlapFast(seg_source, seg_target) # Calculate the cell-to-cell overlaps
     decompDictSource = getInfoSphericalDecomposition(seg_source, data_source, 
