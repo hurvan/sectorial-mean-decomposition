@@ -9,6 +9,7 @@ Repo for the method developed in my master thesis
 3. Perform the mapping using "smd.py"
 4. Quantify the mapped data using "quantify.py" and use it in the simulation software Organism.
 
+Some packages not listed as dependencies, such as PyVista and ANTs, are in the files, they are however not used. 
 
 ### register.py
 
