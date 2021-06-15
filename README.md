@@ -7,7 +7,7 @@ Repo for the method developed in my master thesis
 1. Perform image segmentation with, for example, plant-seg (https://github.com/hci-unihd/plant-seg)
 2. Register source and target tissue with a registration software of your liking, in our case, SimpleElastix was used in the script "register.py".
 3. Perform the mapping using "smd.py"
-4. Quantify the mapped data and use it in the simulation software Organism.
+4. Quantify the mapped data using "quantify.py" and use it in the simulation software Organism.
 
 
 ### register.py
